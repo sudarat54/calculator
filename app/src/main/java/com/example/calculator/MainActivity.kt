@@ -8,6 +8,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var a = ""
+        var b = 0
+        var c = ""
+        var d : Double = 0.0
+
         button32.setOnClickListener {
             textView4.setText("0")
         }
@@ -97,6 +102,54 @@ class MainActivity : AppCompatActivity() {
                 textView4.setText(textView4.text.toString().dropLast(1))
             }
         }
-
+        button52.setOnClickListener {
+            if (!textView4.text.toString().contains(".")) {
+                textView4.text = textView4.text.toString() + "."
+            }
+        }
+        button35.setOnClickListener {
+            c = "/"
+            a = textView4.text.toString()
+            textView4.setText("0")
+        }
+        button39.setOnClickListener {
+            c = "*"
+            a = textView4.text.toString()
+            textView4.setText("0")
+        }
+        button43.setOnClickListener {
+            c = "-"
+            a = textView4.text.toString()
+            textView4.setText("0")
+        }
+        button47.setOnClickListener {
+            c = "+"
+            a = textView4.text.toString()
+            textView4.setText("0")
+        }
+        button34.setOnClickListener {
+            c = "%"
+            a = textView4.text.toString()
+            textView4.setText("0")
+        }
+        button53.setOnClickListener {
+            if (c == "/") {
+                d = (a.toString().toDouble() / textView4.text.toString().toDouble())
+                textView4.setText(d.toString())
+            } else if (c == "") {
+                d = (a.toString().toDouble() * textView4.text.toString().toDouble())
+                textView4.setText(d.toString())
+            } else if (c == "-") {
+                d = (a.toString().toDouble() - textView4.text.toString().toDouble())
+                textView4.setText(d.toString())
+            } else if (c == "+") {
+                d = (a.toString().toDouble() + textView4.text.toString().toDouble())
+                textView4.setText(d.toString())
+            }else if (c == "%") {
+                d = (a.toString().toDouble() % textView4.text.toString().toDouble())
+                textView4.setText(d.toString())
+            }
+        }
     }
+
 }

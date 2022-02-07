@@ -11,9 +11,9 @@
         android:layout_width="409dp"
         android:layout_height="102dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,6 +59,7 @@
         android:layout_width="406dp"
         android:layout_height="88dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
         android:layout_marginEnd="12dp"
         android:orientation="horizontal"
         android:rotation="0"
@@ -105,7 +106,7 @@
         android:layout_width="408dp"
         android:layout_height="84dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="8dp"
         android:orientation="horizontal"
@@ -153,7 +154,7 @@
         android:layout_width="405dp"
         android:layout_height="88dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="690dp"
+        android:layout_marginTop="500dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="8dp"
         android:orientation="horizontal"
@@ -201,7 +202,7 @@
         android:layout_width="404dp"
         android:layout_height="87dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="790dp"
+        android:layout_marginTop="570dp"
         android:layout_marginEnd="12dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -236,20 +237,21 @@
 
     <LinearLayout
         android:id="@+id/linearLayout7"
-        android:layout_width="407dp"
-        android:layout_height="143dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="156dp"
+        android:layout_width="412dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="345dp"
-            android:layout_height="235dp"
+            android:layout_width="366dp"
+            android:layout_height="133dp"
             android:layout_weight="1"
-            android:text="0" />
+            android:text="0"
+            android:textSize="34sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
